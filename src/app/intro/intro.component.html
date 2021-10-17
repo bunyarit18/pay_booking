@@ -1,0 +1,870 @@
+<div class="header pb-2 pt- pt-lg-2 d-flex align-items-center"
+    style="min-height: 100px; background-image: url(https://beefislandguesthouse.com/wp-content/uploads/2019/05/161340977-1024x372.jpg); background-size: cover; background-position: center top;">
+    <!-- Mask -->
+    <span class="mask bg-gradient opacity-0"></span>
+    <!-- Header container -->
+</div>
+
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+
+    <div class="w3-row">
+        <div class="w3-col m3">
+            <div class="w3-card w3-round w3-white">
+                <div class="w3-container">
+                    <h4 class="w3-center">Find a destination</h4>
+                    <form action="">
+                        <div class="input-group">
+                            <input id="msg" type="text" class="form-control" name="msg"
+                                placeholder="จุดหมายปลายทางของท่าน">
+                        </div>
+                        <div class="day-visited">
+                            <a> &nbsp; CHECK IN &nbsp; &nbsp; &nbsp; : &nbsp; </a>
+                            <input type="date" name="dayvisited" required />
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+
+                        <div class="day-visited">
+                            <a> &nbsp; CHECK OUT &nbsp; : &nbsp; </a>
+                            <input type="date" name="dayvisited" required />
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+
+                        <div class="w3-row-padding" style="margin:8px -16px;">
+                            <div class="w3-half w3-margin-bottom">
+                                <label><i class="fa fa-male"></i> &nbsp; Adults</label>
+                                <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+                            </div>
+                            <div class="w3-half">
+                                <label><i class="fa fa-child"></i> &nbsp; Kids</label>
+                                <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+                            </div>
+                        </div>
+                        <label><i class="fa fa-bed"></i> &nbsp; Room </label>
+                        <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="30">
+
+                        <input type="submit" value="ค้นหา">
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <div class="w3-card w3-round w3-white w3-hide-small">
+                <div class="card-body">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form w-100"
+                        data-aos="fade-up">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.3979579700017!2d100.59988111541257!3d7.195352716982686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d33235209b1e5%3A0x36a349ace93430c4!2sSPS%20Mansion!5e0!3m2!1sth!2sth!4v1632062780574!5m2!1sth!2sth"
+                            frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                    </form>
+                </div>
+            </div><br>
+
+
+            <!-- Accordion -->
+            <div class="w3-card w3-round">
+                <div class="w3-white">
+                    <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> HOTEL</button>
+                    <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> APARTMENT </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> HOSTEL </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> CAMP </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> BUNGALOW </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> VACATION HOME </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> POOL VILLA </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> RESORT </button>
+                    <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
+                            class="fa fa-bed fa-fw w3-margin-right"></i> HOMESTAY </button>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+        <!-- Middle Column -->
+        <div class="w3-col m9">
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                <h4>&nbsp; SPS MANSION</h4>
+                <label class="custom-control-label" for="inlineCheckbox3">&nbsp;
+                    <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                    <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                    <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                    &nbsp; ระดับ 3 ดาว
+                </label>
+                <h6>&nbsp; 1 ซ.ดอกรัก ถ.ทะเลหลวง ต.บ่อยาง อ.เมือง, เทศบาลนครสงขลา &nbsp; &nbsp;<a href="">
+                        ดูที่พักบนแผนที่ </a>
+                </h6>
+
+                <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="https://www.forfur.com/img/I81/t_8013_1614584549667816180.jpg" alt="Bedroom"
+                                style="width:100%">
+                            <span class="w3-display-bottomleft w3-padding">STANDARD</span>
+                        </div>
+                    </div>
+                    <div class="w3-half">
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="https://www.forfur.com/img/I81/t_8013_1614584549667816180.jpg"
+                                        alt="Bedroom" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding">SUPERIOR</span>
+                                </div>
+                            </div>
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="https://www.forfur.com/img/I81/t_8013_1614584549667816180.jpg"
+                                        alt="Bedroom" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding">DELUXE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="https://www.forfur.com/img/I81/t_8013_1614584549667816180.jpg"
+                                        alt="Bedroom" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding">SUITE</span>
+                                </div>
+                            </div>
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="https://www.forfur.com/img/I81/t_8013_1614584549667816180.jpg"
+                                        alt="Bedroom" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding">HOTEL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <div class="w3-container w3-padding-10 w3-center">
+
+                    <div class="w3-quarter">
+                        <i class="material-icons" style="font-size:36px;color:rgb(164, 231, 164);">directions_bus</i>
+                        <h6>ใกล้ขนส่งสาธารณะ</h6>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="material-icons" style="font-size:36px;color:rgb(164, 231, 164);">wifi</i>
+                        <h6>Wi-Fi ทุกห้อง (ฟรี)</h6>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="material-icons" style="font-size:36px;color:rgb(164, 231, 164);">drive_eta</i>
+                        <h6>ที่จอดรถฟรี</h6>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="material-icons" style="font-size:36px;color:rgb(164, 231, 164);">free_breakfast</i>
+                        <h6>บริการอาหารเช้า</h6><br>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <h4> การแนะนำโรงแรม </h4>
+                <h6> SPS MANSION ในหาดใหญ่ สร้างขึ้นเมื่อปี 2015 และเป็นตัวเลือกชั้นยอดสำหรับนักเดินทางทุกท่าน
+                    ท่านสามารถเดินทางไปยังที่พักระดับ 2 ดาวแห่งนี้ได้อย่างง่ายดาย เพราะอยู่ห่างจากสนามบินเพียง 15 km
+                    เนื่องจากที่พักตั้งอยู่ในทำเลที่เดินทางสะดวก ผู้เข้าพักจึงไปยังสถานที่ท่องเที่ยวยอดนิยมต่าง ๆ
+                    ของเมืองได้โดยง่าย <br><br>
+                    ผู้เข้าพักสามารถเพลิดเพลินกับบริการและสิ่งอำนวยความสะดวกเหนือระดับได้ ณ ที่พักในหาดใหญ่แห่งนี้
+                    ที่พักมีสิ่งอำนวยความสะดวกต่างๆ ให้บริการแก่ผู้เข้าพัก อาทิ ฟรี Wi-Fi ทุกห้อง, ระบบความปลอดภัย 24
+                    ชั่วโมง,
+                    แม่บ้านทำความสะอาดรายวัน, แผนกต้อนรับ 24 ชั่วโมง, Wi-Fi ในพื้นที่สาธารณะ
+                </h6>
+                <span class="w3-tag w3-small w3-amber"> อาหารเช้า </span>&nbsp;
+                <span class="w3-tag w3-small w3-amber"> WI-FI </span>&nbsp;
+                <span class="w3-tag w3-small w3-amber"> ที่จอดรถ </span>&nbsp;
+                <span class="w3-tag w3-small w3-amber"> ห้องปลอดบุหรี่ </span>
+                <br><br>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <span class="w3-right w3-opacity">
+                    <button class="w3-button w3-teal w3-padding-large"> เปลี่ยนวันเข้าพัก </button>
+                </span>
+
+                <h4>การจองห้องพัก</h4>
+                <div class="w3-row-padding">
+                    <div class="w3-row w3-center w3-padding- w3-section ">
+                        <div class="w3-quarter w3-section">
+                            <div class="w3-panel w3-leftbar w3-white">
+                                <p><b>วันที่เช็คอิน</b></p>
+                                <h4><a>พฤหัสบดี 16 ก.ย. 2021 </a></h4>
+                            </div>
+                        </div>
+                        <div class="w3-quarter w3-section">
+                            <div class="w3-panel w3-leftbar  w3-white">
+                                <p><b>วันที่เช็คเอาท์</b></p>
+                                <h4><a>พฤหัสบดี 18 ก.ย. 2021 </a></h4>
+                            </div>
+                        </div>
+                        <div class="w3-quarter w3-section">
+                            <div class="w3-panel w3-leftbar  w3-white">
+                                <p><b>ผู้เข้าพัก</b></p>
+                                <h4><a>ผู้ใหญ่ 2 ท่าน เด็ก 1 ท่าน</a></h4>
+                            </div>
+                        </div>
+                        <div class="w3-quarter w3-section">
+                            <div class="w3-panel w3-leftbar  w3-white">
+                                <p><b>จำนวนห้อง</b></p>
+                                <h4><a>จำนวน 1 ห้อง เข้าพัก 2 คืน</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="w3-col m18">
+
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin "><br>
+                <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                <h4>ห้องมาตฐาน ( STANDARD ROOM ) </h4><br>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar" class="w3-left  w3-margin-right" style="width: 280px; height: 160px ">
+
+                <div class="w3-quarter w3-container">
+                    <h4> เลือกประเภทเตียง </h4>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 1 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label><br>
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 2 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label>
+                    </div>
+                    <hr style="height:1px;border-width:0;color:rgb(212, 209, 209);background-color:rgb(226, 221, 221)">
+
+                    <div class="w3-row w3-large ">
+                        <h5>จำนวนผู้เข้าพัก</h5>
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <h5>เข้าพักสูงสุด 2 คน</h5>
+                    </div><br>
+                </div>
+
+                <div class="w3-col w3-container" style="width:25%">
+                    <h4> การบริการ </h4>
+                    <div class="w3-row w3-large ">
+                        <div class="w3-round w3-col s6 ">
+                            <h6><i class="fa fa-fw fa-wifi"></i>&nbsp; ฟรี WIFI </h6>
+                            <h6><i class="fa fa-fw fa-home"></i>&nbsp; 25 ตร.ม. </h6>
+                            <h6><i class="fa fa-fw fa-building-o"></i>&nbsp; วิว เมือง </h6>
+                            <h6><i class="fa fa-fw fa-snowflake-o"></i>&nbsp; เครื่องปรับอากาศ </h6>
+                            <h6><i class="fa fa-fw fa-thermometer"></i>&nbsp; เครื่องทำน้ำอุ่น </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <h4> การจองห้องพัก </h4>
+                    <h4> ราคาเริ่มต้น (ต่อคืน) <a>&nbsp; 800 บาท / คืน</a></h4>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-bed"></i> &nbsp; เลือกจำนวนห้อง </label>
+                        <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="99">
+                    </div><br><br><br><br>
+                    <button class="w3-button w3-teal w3-padding-large"> เลือกห้องนี้ </button>
+                </div>
+            </div>
+
+
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                <h4>&nbsp; ห้องซูพีเรีย ( SUPERIOR ROOM )</h4><br>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar" class="w3-left  w3-margin-right" style="width: 280px; height: 160px ">
+
+                <div class="w3-quarter w3-container">
+                    <h4> เลือกประเภทเตียง </h4>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 1 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label><br>
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 2 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label>
+                    </div>
+                    <hr style="height:1px;border-width:0;color:rgb(212, 209, 209);background-color:rgb(226, 221, 221)">
+
+                    <div class="w3-row w3-large ">
+                        <h5>จำนวนผู้เข้าพัก</h5>
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <h5>เข้าพักสูงสุด 2 คน</h5>
+                    </div><br>
+                </div>
+
+                <div class="w3-col w3-container" style="width:25%">
+                    <h4> การบริการ </h4>
+                    <div class="w3-row w3-large ">
+                        <div class="w3-round w3-col s6 ">
+                            <h6><i class="fa fa-fw fa-wifi"></i>&nbsp; ฟรี WIFI </h6>
+                            <h6><i class="fa fa-fw fa-home"></i>&nbsp; 25 ตร.ม. </h6>
+                            <h6><i class="fa fa-fw fa-building-o"></i>&nbsp; วิว เมือง </h6>
+                            <h6><i class="fa fa-fw fa-snowflake-o"></i>&nbsp; เครื่องปรับอากาศ </h6>
+                            <h6><i class="fa fa-fw fa-thermometer"></i>&nbsp; เครื่องทำน้ำอุ่น </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <h4> การจองห้องพัก </h4>
+                    <h4> ราคาเริ่มต้น (ต่อคืน) <a>&nbsp; 800 บาท / คืน</a></h4>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-bed"></i> &nbsp; เลือกจำนวนห้อง </label>
+                        <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="99">
+                    </div><br><br><br><br>
+                    <button class="w3-button w3-teal w3-padding-large"> เลือกห้องนี้ </button>
+                </div>
+            </div>
+
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <h4>&nbsp; ห้องดีลักซ์ ( DELUXE ROOM ) </h4><br>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar" class="w3-left  w3-margin-right" style="width: 280px; height: 160px ">
+
+                <div class="w3-quarter w3-container">
+                    <h4> เลือกประเภทเตียง </h4>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 1 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label><br>
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 2 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label>
+                    </div>
+                    <hr style="height:1px;border-width:0;color:rgb(212, 209, 209);background-color:rgb(226, 221, 221)">
+
+                    <div class="w3-row w3-large ">
+                        <h5>จำนวนผู้เข้าพัก</h5>
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <h5>เข้าพักสูงสุด 2 คน</h5>
+                    </div><br>
+                </div>
+
+                <div class="w3-col w3-container" style="width:25%">
+                    <h4> การบริการ </h4>
+                    <div class="w3-row w3-large ">
+                        <div class="w3-round w3-col s6 ">
+                            <h6><i class="fa fa-fw fa-wifi"></i>&nbsp; ฟรี WIFI </h6>
+                            <h6><i class="fa fa-fw fa-home"></i>&nbsp; 25 ตร.ม. </h6>
+                            <h6><i class="fa fa-fw fa-building-o"></i>&nbsp; วิว เมือง </h6>
+                            <h6><i class="fa fa-fw fa-snowflake-o"></i>&nbsp; เครื่องปรับอากาศ </h6>
+                            <h6><i class="fa fa-fw fa-thermometer"></i>&nbsp; เครื่องทำน้ำอุ่น </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <h4> การจองห้องพัก </h4>
+                    <h4> ราคาเริ่มต้น (ต่อคืน) <a>&nbsp; 800 บาท / คืน</a></h4>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-bed"></i> &nbsp; เลือกจำนวนห้อง </label>
+                        <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="99">
+                    </div><br><br><br><br>
+                    <button class="w3-button w3-teal w3-padding-large"> เลือกห้องนี้ </button>
+                </div>
+            </div>
+
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <h4>&nbsp; ห้อสวีท ( SUITE ROOM ) </h4><br>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Avatar" class="w3-left  w3-margin-right" style="width: 280px; height: 160px ">
+
+                <div class="w3-quarter w3-container">
+                    <h4> เลือกประเภทเตียง </h4>
+                    <div class="custom-control custom-checkbox mb-3">
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 1 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label><br>
+                        <input class="custom-control-input" type="checkbox" id="inlineCheckbox5" value="option5" />
+                        <label class="custom-control-label" for="inlineCheckbox5">
+                            &nbsp; จำนวน 2 เตียงใหญ่
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                            <span class="w3-right w3-opacity"> <i class="fa fa-bed " aria-hidden="true"
+                                    style="color:rgb(19, 211, 29);"></i> &nbsp;</span>
+                        </label>
+                    </div>
+                    <hr style="height:1px;border-width:0;color:rgb(212, 209, 209);background-color:rgb(226, 221, 221)">
+
+                    <div class="w3-row w3-large ">
+                        <h5>จำนวนผู้เข้าพัก</h5>
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true" style="font-size:18px"></i>&nbsp;
+                        <h5>เข้าพักสูงสุด 2 คน</h5>
+                    </div><br>
+                </div>
+
+                <div class="w3-col w3-container" style="width:25%">
+                    <h4> การบริการ </h4>
+                    <div class="w3-row w3-large ">
+                        <div class="w3-round w3-col s6 ">
+                            <h6><i class="fa fa-fw fa-wifi"></i>&nbsp; ฟรี WIFI </h6>
+                            <h6><i class="fa fa-fw fa-home"></i>&nbsp; 25 ตร.ม. </h6>
+                            <h6><i class="fa fa-fw fa-building-o"></i>&nbsp; วิว เมือง </h6>
+                            <h6><i class="fa fa-fw fa-snowflake-o"></i>&nbsp; เครื่องปรับอากาศ </h6>
+                            <h6><i class="fa fa-fw fa-thermometer"></i>&nbsp; เครื่องทำน้ำอุ่น </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <h4> การจองห้องพัก </h4>
+                    <h4> ราคาเริ่มต้น (ต่อคืน) <a>&nbsp; 800 บาท / คืน</a></h4>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-half w3-margin-bottom">
+                        <label><i class="fa fa-bed"></i> &nbsp; เลือกจำนวนห้อง </label>
+                        <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="99">
+                    </div><br><br><br><br>
+                    <button class="w3-button w3-teal w3-padding-large"> เลือกห้องนี้ </button>
+                </div>
+            </div>
+
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+                <div class="w3-quarter w3-container">
+                    <h4> สิ่งอำนวยความสะดวกของที่พัก </h4>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>บริการอินเทอร์เน็ต</b></p>
+                        <h6><i class="fa fa-fw fa-wifi"></i>&nbsp; WIFI ทุกห้อง (ฟรี)</h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>กิจกรรมผ่อนคลาย
+                            </b></p>
+                        <h6><i class="fa fa-fire"></i>&nbsp; สปา / สระว่ายน้ำ</h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>บริการ</b></p>
+                        <h6><i class="fa fa-check-square-o"></i>&nbsp; ทำความสะอาดรายวัน </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>สิ่งอำนวยความสะดวก</b></p>
+                        <h6><i class="fa fa-plus-square-o"></i>&nbsp; ลิฟต์ / พื้นที่สูบบุหรี่ </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>บริการสำหรับเด็ก</b></p>
+                        <h6><i class="fa fa-smile-o"></i>&nbsp; ห้องสำหรับครอบครัว </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                </div>
+
+                <div class="w3-quarter w3-container">
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อุปกรณ์</b></p>
+                        <h6><i class="fa fa-television"></i>&nbsp; โทรทัศน์จอแบน</h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>ความปลอดภัย</b></p>
+                        <h6><i class="fa fa-television"></i>&nbsp; กล้องวงจรปิด </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>การเรียกพนังงาน</b></p>
+                        <h6><i class="fa fa-mobile"></i>&nbsp; ระบบเรียกพนักงงาน </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                    <div class="w3-panel w3-leftbar w3-white">
+                        <p><b>อาหาร เครื่องดื่ม </b></p>
+                        <h6><i class="fa fa-cutlery"></i>&nbsp; บาร์ / ห้องอาหาร </h6>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="https://thailand-property-news.knightfrank.co.th/wp-content/uploads/2021/02/hotel-room-5858069.jpg"
+                                style="width:100%" alt="Avatar">
+                            <span class="w3-display-bottomleft w3-padding">SPS MANSION</span>
+
+                        </div>
+                        <div class="w3-container">
+                            <hr>
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 / 10</span>
+                            <p class="w3-large"><b><i
+                                        class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>คะแนนรีวิวรวมของที่พักแห่งนี้</b>
+                            </p>
+                            <p>ความสะอาด</p>
+                            <div class="w3-light-grey w3-round w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                            </div>
+                            <p>สิ้งอำนวยความสะดวก</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                    <div class="w3-center w3-text-white">80%</div>
+                                </div>
+                            </div>
+                            <p>คุณภาพของห้อง</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>พนักงาน</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>ทำเลที่ตั้ง</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <p>คุ้มค่าเงิน</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div><br>
+                </div>
+
+                <div class="w3-twothird">
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <div class="w3-container"><br>
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar"
+                                class="w3-left w3-circle w3-margin-right" style="width:70px">
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                            <h5 class="w3-opacity"><b>RAMPAKAN</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec
+                                2014</h6>
+                            <p>ที่พักสะอาดมาก เงียบสงบ มีความเป็นส่วนตัว พนักงานและแม่บ้านน่ารักมากๆ ค่ะ</p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar"
+                                class="w3-left w3-circle w3-margin-right" style="width:70px">
+
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                            <h5 class="w3-opacity"><b>NADA</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec
+                                2014</h6>
+                            <p>คุ้มค่าคุ่มราคามาก จองห้องแฟมิลี่ กว้างขวาง พัก 4 คนพ่อแม่ลูก สบาย ไม่อึดอัด ห้องพักสะอาด
+                                คุณภาพเกินราคา
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar"
+                                class="w3-left w3-circle w3-margin-right" style="width:70px">
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                            <h5 class="w3-opacity"><b>BUNYARIT</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar
+                                2012</h6>
+                            <p>ห้องสะอาด แต่เล็กไปหน่อย อยู่ใจกลางเมือง ใกล้แหล่งช๊อปปิ้ง สามารถเดินทางได้สะดวก</p><br>
+                        </div>
+                        <div class="w3-container">
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar"
+                                class="w3-left w3-circle w3-margin-right" style="width:70px">
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                            <h5 class="w3-opacity"><b>TAWINEE</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar
+                                2012</h6>
+                            <p>ชอบที่นี่อยู่แล้วมาพักบ่อย หาของทานง่าย ไปไหนๆ ก็สดวกพนักงานบริการดีมาก</p><br>
+                        </div>
+                        <div class="w3-container">
+                            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar"
+                                class="w3-left w3-circle w3-margin-right" style="width:70px">
+                            <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                            <h5 class="w3-opacity"><b>Tarwaan</b></h5>
+                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar
+                                2012</h6>
+                            <p>โรงแรมสะอาด ห้องพักดูทันสมัย
+                                ห้องเงียบไม่มีเสียงรบกวน เตียงนอนสบายมากๆ</p><br>
+                        </div>
+                    </div>
+                    <div class="w3-center w3-padding">
+                        <div class="pagination">
+                            <a href="#">
+                                < </a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#"> > </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="w3-row-padding" style="margin:0 -16px"><br>
+            <h5 style="font-size: 23px;">&nbsp; &nbsp; ที่พักแนะนำ - อ้างอิงจากที่พักที่ท่านรับชม</h5>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <img src="../../assets/images/company-images/7.jpg" alt="Nature" style="width:100%">
+                    <div class="w3-container ">
+                        <h4>Angular Hotel</h4>
+                        <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                        <label class="custom-control-label" for="inlineCheckbox3">
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;<br>
+                        </label>
+                    </div>
+                    <div class="w3-container"><br>
+                        <span class="ww3-opacity">เริ่มต้นที่</span>
+                        <span class="w3-opacity">
+                            <h5 style="font-size: 23px;"> THB 800 </h5>
+                        </span>
+                        <div class="w3-row">
+                            <div align="right">
+                                <button class="w3-button w3-teal w3-padding-large"> ชมที่พัก </button>
+                            </div><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <img src="../../assets/images/company-images/5.jpg" alt="Nature" style="width:100%">
+                    <div class="w3-container ">
+                        <h4>Angular Hotel</h4>
+                        <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                        <label class="custom-control-label" for="inlineCheckbox3">
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;<br>
+                        </label>
+                    </div>
+                    <div class="w3-container"><br>
+                        <span class="ww3-opacity">เริ่มต้นที่</span>
+                        <span class="w3-opacity">
+                            <h5 style="font-size: 23px;"> THB 800 </h5>
+                        </span>
+                        <div class="w3-row">
+                            <div align="right">
+                                <button class="w3-button w3-teal w3-padding-large"> ชมที่พัก </button>
+                            </div><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <img src="../../assets/images/company-images/4.jpg" alt="Nature" style="width:100%">
+                    <div class="w3-container ">
+                        <h4>Angular Hotel</h4>
+                        <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                        <label class="custom-control-label" for="inlineCheckbox3">
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;<br>
+                        </label>
+                    </div>
+                    <div class="w3-container"><br>
+                        <span class="ww3-opacity">เริ่มต้นที่</span>
+                        <span class="w3-opacity">
+                            <h5 style="font-size: 23px;"> THB 800 </h5>
+                        </span>
+                        <div class="w3-row">
+                            <div align="right">
+                                <button class="w3-button w3-teal w3-padding-large"> ชมที่พัก </button>
+                            </div><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <img src="../../assets/images/company-images/1.jpg" alt="Nature" style="width:100%">
+                    <div class="w3-container ">
+                        <h4>Angular Hotel</h4>
+                        <span class="w3-right w3-opacity"> คะแนน 8.5 </span>
+                        <label class="custom-control-label" for="inlineCheckbox3">
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;
+                            <i class="fa fa-star" aria-hidden="true" style="color:rgb(250, 199, 59);"></i>&nbsp;<br>
+                        </label>
+                    </div>
+                    <div class="w3-container"><br>
+                        <span class="ww3-opacity">เริ่มต้นที่</span>
+                        <span class="w3-opacity">
+                            <h5 style="font-size: 23px;"> THB 800 </h5>
+                        </span>
+                        <div class="w3-row">
+                            <div align="right">
+                                <button class="w3-button w3-teal w3-padding-large"> ชมที่พัก </button>
+                            </div><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--Content Section-->
+
+    <div id="services" class="scrollto clearfix">
+
+        <section id="clients" class="scrollto clearfix">
+            <div class="row clearfix">
+
+                <div class="col-3">
+
+                    <div class="section-heading">
+                        <h3>Accommodation type</h3>
+                        <h2 class="section-title">Search by accommodation type</h2>
+                        <p class="section-subtitle">
+                            We have a variety of accommodation for you to choose according to your style and
+                            preferences.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/7.jpg" alt="Company" />
+                        <div class="client-overlay"><span>HOTEL</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/1.jpg" alt="Company" />
+                        <div class="client-overlay"><span>APARTMENT</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/8.jpg" alt="Company" />
+                        <div class="client-overlay"><span>HOSTEL</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/2.jpg" alt="Company" />
+                        <div class="client-overlay"><span>CAMP</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/3.jpg" alt="Company" />
+                        <div class="client-overlay"><span>BUNGALOW</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/4.jpg" alt="Company" />
+                        <div class="client-overlay"><span>VACATION HOME</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/5.jpg" alt="Company" />
+                        <div class="client-overlay"><span>POOL VILLA</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/6.jpg" alt="Company" />
+                        <div class="client-overlay"><span>RESORT</span></div>
+                    </a>
+
+                    <a href="#" class="col-3">
+                        <img src="../../assets/images/company-images/9.jpg" alt="Company" />
+                        <div class="client-overlay"><span>HOMESTAY</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--End of Content Section-->
